@@ -13,9 +13,9 @@ public abstract class LoginPageBase extends AbstractPage {
         setPageOpeningStrategy(PageOpeningStrategy.BY_ELEMENT);
     }
 
-    public HomePageBase login() {
-        typeUsername("standard_user");
-        typePassword("secret_sauce");
+    public HomePageBase login(String username, String password) {
+        typeUsername(username);
+        typePassword(password);
         clickLoginButton();
         return initPage(getDriver(), HomePageBase.class);
     }

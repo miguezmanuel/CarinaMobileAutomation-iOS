@@ -8,11 +8,18 @@ import org.testng.annotations.Test;
 
 public class SwagLabsLoginTest implements IAbstractTest {
 
+
     @Test
     public void testLogin(){
-            LoginPageBase loginPageBase = initPage(getDriver(), LoginPageBase.class);
-            HomePageBase homePage = loginPageBase.login();
-            Assert.assertTrue(homePage.isPageOpened(), "The Home Page was not open");
+        LoginPageBase loginPageBase = initPage(getDriver(), LoginPageBase.class);
+
+        Assert.assertTrue(loginPageBase.isPageOpened(), "The Login Page was not open");
+
+        HomePageBase homePage = loginPageBase.login("standard_user", "secret_sauce");
+
+        Assert.assertTrue(homePage.isPageOpened(), "The Home Page was not open");
+
+        Assert.assertTrue(homePage.isCartButtonPresent(), "Cart button is not visible on Home Page");
     }
 
 }

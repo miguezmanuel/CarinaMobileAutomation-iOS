@@ -2,13 +2,14 @@ package com.solvd.carina.demo.mobile.swaglabs.ios.components;
 
 import com.solvd.carina.demo.mobile.swaglabs.common.components.HeaderMenuComponentBase;
 import com.solvd.carina.demo.mobile.swaglabs.common.pages.CartPageBase;
-import com.solvd.carina.demo.mobile.swaglabs.common.pages.LoginPageBase;
+import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.utils.factory.ICustomTypePageFactory;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.locator.ExtendedFindBy;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 
+@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = HeaderMenuComponentBase.class)
 public class HeaderMenuComponent extends HeaderMenuComponentBase implements ICustomTypePageFactory {
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeOther[`name == 'test-Cart'`]/XCUIElementTypeOther")

@@ -16,5 +16,4 @@ public abstract class HomePageBase extends AbstractPage {
 
     public abstract HeaderMenuComponentBase getHeaderMenuComponent();
 
-
 }
