@@ -1,0 +1,35 @@
+[2025-01-28 08:24:39] [1] [INFO] 
+============= Basic configuration =============
+env=DEMO
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+selenium_url=http://127.0.0.1:4723
+auto_screenshot=true
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+deviceType=phone
+autoWebView=true
+appiumServer=http://127.0.0.1:4723
+startIWDP=true
+deviceName=Iphone 16 Pro
+wdaLaunchTimeout=10000
+platformVersion=18.2
+automationName=XCUITest
+useNewWDA=true
+browserName=Safari
+platformName=iOS
+udid=42FA5759-B174-4DA4-B39F-A341A6A8998A
+wdaConnectionTimeout=120000
+===============================================
+
+[2025-01-28 08:24:39] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-01-28 08:24:41] [1] [INFO] [TestNG] Running:
+  /Users/manumiguez/Library/Caches/JetBrains/IdeaIC2024.3/temp-testng-customsuite.xml
+
+[2025-01-28 08:24:41] [1] [INFO] Set thread-count=1
+[2025-01-28 08:24:41] [1] [INFO] Set data-provider-thread-count=1
+[2025-01-28 08:24:41] [1] [INFO] CARINA_CORE_VERSION: 1.1.3
+[2025-01-28 08:25:41] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2025-01-28 08:25:41] [1] [INFO] RESULT #1: TEST [carinaiosautomation - testLogin] FAIL [log=file:///Users/manumiguez/Documents/Code/Java/Test/carinaiosautomation/./reports/1738095879309/60e9b34a-36a2-4bc0-a932-d5a0eb465177/test.log]
